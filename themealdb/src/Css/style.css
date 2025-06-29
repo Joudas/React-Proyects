@@ -1,0 +1,122 @@
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.truculenta {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.f-2{
+    font-size: 2em;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+}
+html, body {
+  overflow-x: hidden;
+}
+main{
+    min-height: 100vh;
+    width: 100vw;
+    color: #f9f9f9;
+    background-color: #242424;
+}
+main > .container{
+    min-height: 100vh;
+}
+main > div{
+    width: 100%;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: 20vh 1fr;
+    padding-bottom: 2rem;
+}
+.container-input{
+    display: grid;
+    grid-template-rows: 40% 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-input > input{
+    width: 10vw;
+    display: flex;
+    justify-self: center;
+    border-radius: .1rem;
+    background-color: #f9f9f9;
+    color: #242424;
+    border-color: transparent; 
+    outline: none;   
+}
+.container-food{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.container-food >p{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.content-meals{
+    min-height: 20vh;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.content-meals > img{
+    width: 60%;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: .5s all;
+}
+.content-meals > img:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.11);
+}
+.content-meals > p{
+    width: 100%;
+}
+
+.container-meal{
+    display: grid;
+    grid-template-columns: 40vw 1fr;
+}
+.text-content{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text-content > p{
+    width: 100%;
+}
+.ingredient-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.ingredient{
+    width: 100%;
+}
+.ingredient > img{
+    width: 40%;
+}
